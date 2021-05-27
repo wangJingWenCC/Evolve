@@ -38,7 +38,8 @@ export function enableDebug(){
 
 export function updateDebugData(){
     if (global.settings.expose){
-        window.evolve.global = JSON.parse(JSON.stringify(global));
+        // window.evolve.global = JSON.parse(JSON.stringify(global));
+        window.evolve.global = global;
         window.evolve.craftCost = JSON.parse(JSON.stringify(craftCost())),
         window.evolve.breakdown = JSON.parse(JSON.stringify(breakdown));
     }
